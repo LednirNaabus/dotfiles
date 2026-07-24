@@ -1,6 +1,6 @@
-[submodule "nvim"]
-	path = nvim
+[submodule "nvim/.config/nvim"]
+	path = nvim/.config/nvim
 	url = git@github.com:LednirNaabus/neovim-config.git
-[submodule "tmux"]
-	path = tmux
+[submodule "tmux/.config/tmux"]
+	path = tmux/.config/tmux
 	url = git@github.com:LednirNaabus/tmux-config-files.git
