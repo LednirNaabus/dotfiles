@@ -25,3 +25,6 @@ set.timeoutlen = 500
 
 -- line wrapping
 set.wrap = false
+
+-- clipboard
+set.clipboard = unnamedplus

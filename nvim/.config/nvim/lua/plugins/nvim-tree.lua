@@ -20,6 +20,10 @@ return {
                     quit_on_open = true,
                 },
             },
+            git = {
+                enable = true,
+                ignore = false,
+            },
         })
     end,
 }
