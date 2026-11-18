@@ -12,6 +12,7 @@ alias grep='grep --color=auto'
 
 # Fastfetch
 alias neofetch='fastfetch -c examples/13'
+alias fetch='fastfetch'
 
 # Git prompt
 source /usr/share/git/completion/git-prompt.sh
