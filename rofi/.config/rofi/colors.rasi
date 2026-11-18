@@ -1,0 +1,28 @@
+* {
+    /* Background */
+    bg:          #011627;
+    bg2:         #0d2b40;
+    bg3:         #1d3b53;
+
+    /* Foreground */
+    fg:          #d6deeb;
+    muted:       #637b91;
+
+    /* Accent colors */
+    red:         #EF5350;
+    green:       #22da6e;
+    yellow:      #c5e478;
+    blue:        #82AAFF;
+    magenta:     #C792EA;
+    cyan:        #21c7a8;
+
+    /* UI states */
+    selected:    #0d486e;
+    border:      #1d3b53;
+    active:      #22da6e;
+    urgent:      #EF5350;
+
+    /* Transparency */
+    transparent: rgba(0,0,0,0);
+    black:       rgba(1,22,39,0.85);
+}
