@@ -46,9 +46,9 @@ disk "/" {
 }
 
 memory {
-        format = "%used | %available"
+        format = "RAM: %used | %total (%percentage_used)"
         threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+        format_degraded = "RAM LOW: %available"
 }
 
 tztime local {
