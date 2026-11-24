@@ -2,6 +2,9 @@
 # ~/.bashrc
 #
 
+# Set default systemd editor
+export SYSTEMD_EDITOR=nvim
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -9,6 +12,10 @@
 # Defaults
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+alias dev='cd ~/Dev'
+alias dots='cd ~/dotfiles'
+alias pls='sudo' # lol
 
 # Fastfetch
 alias neofetch='fastfetch -c examples/13'
@@ -33,4 +40,4 @@ DARK_GRAY='\[\033[0;90m\]'
 RESET='\[\033[0m\]'
 
 # Prompt
-PS1="${DEFAULT_COLOR}[\t] ${GREEN}\w${YELLOW}\$(__git_ps1 ' (%s)') ${RESET}\$ "
+PS1="${DEFAULT_COLOR}[\t] ${GREEN}\W${YELLOW}\$(__git_ps1 ' (%s)') ${RESET}\$ "
