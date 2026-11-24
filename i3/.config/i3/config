@@ -224,6 +224,8 @@ bindsym XF86AudioStop exec playerctl stop
 # Flameshot controls (Screenshot tool)
 bindsym Print exec --no-startup-id flameshot gui
 bindsym $mod+Shift+s exec --no-startup-id flameshot-gui
+# full screenshot (copy to clipboard)
+bindsym $mod+Shift+Print exec --no-startup-id flameshot full -c
 
 # Gaps
 # for_window [class=".*"] border pixel 0
