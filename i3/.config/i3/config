@@ -35,11 +35,17 @@ exec_always --no-startup-id "picom --config /home/lednir/.config/picom/picom.con
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork -i ~/Pictures/Wallpapers/Lockscreen/lockscreen.png
+# lock after inactivity
+exec --no-startup-id xset s 600 600
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+
+# Keybindings for lock and suspend
+bindsym $mod+Shift+x exec --no-startup-id i3lock -i ~/Pictures/Wallpapers/Lockscreen/lockscreen.png
+bindsym $mod+Shift+p exec --no-startup-id systemctl suspend
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -115,7 +121,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+a focus parent
 
 # focus the child container
-#bindsym $mod+d focus child
+bindsym $mod+d focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
